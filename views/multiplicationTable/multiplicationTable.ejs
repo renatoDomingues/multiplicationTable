@@ -1,0 +1,19 @@
+
+<%- include('../partials/header') %> 
+
+    <div class="starter-template">
+        <h1>multiplicationTable number of <%= num %></h1>
+        <table class="table table-striped table-bordered table-hover">
+            <% multiplicationTables.map( item => { %>
+            <tr>
+                <td> <%= item.num %> </td> 
+                <td> &nbsp; X &nbsp; </td> 
+                <td> <%= item.i %> </td>
+                <td> &nbsp; = &nbsp; </td>
+                <td> <%= item.result %> </td>
+            </tr>
+            <% }) %>
+        </table>
+    </div>
+
+<%- include('../partials/footer') %> 

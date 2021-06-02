@@ -1,0 +1,13 @@
+
+<%- include('../partials/header') %> 
+
+    <div class="starter-template">
+        <h1>Choose your number</h1>
+        <ul>
+            <% number.map( i => { %>
+            <li><a href="/multiplicationTables/of/<%= i %>">MultiplicationTable of <%= i %></a></li>
+            <% }) %>
+        </ul>
+    </div>
+
+<%- include('../partials/footer') %> 
